@@ -1,9 +1,10 @@
 {
-  "name": "resolucion",
+  "name": "mercado-liebre-2025",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practica de las clases y estudios de desarrollo web FullStack",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch app.js"
   },

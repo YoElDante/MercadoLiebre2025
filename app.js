@@ -8,7 +8,7 @@ app.use(express.static("./public"));
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT , () => {
-  console.log(`Servidor en linea en http://localhost:3000`);
+  console.log(`Servidor en linea en el puerto ${PORT}`);
 });
 
 app.get ( '/', (req, res) => {
