@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fav Icon-->
+  <link rel="icon" href="/icons/mercado-libre-svgrepo-com.svg" type="image/x-icon">
+
+  <!--Estilos-->
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="/style/reset.css">
+
+  <!--Propios-->
+  <link rel="stylesheet" href="/style/home.css">
+
+  <!--De Terceros-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Mercado Liebre</title>
+</head>
+
+
+<body class="body">
+
+  <!-- ------ -->
+  <!-- HEADER -->
+  <!-- ------ -->
+  <header class="header">
+
+    <!-- Etiqueta h1 para SEO -->
+    <h1 class="header__title header__title--oculto">Mercado Liebre</h1>
+
+    <div class="header__main">
+      <img class="header__logo" src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" />
+      
+      <!-- Barra de busqueda -->
+      <nav class="header__search-bar">
+        <form class="search-bar__form" action="/buscar" method="get">
+          <input type="text" class="search-bar__input" name="input-search-bar" id="input-search-bar"
+            placeholder="  Busca productos, marcas, y mucho más..." />
+          <button class="search-bar__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </nav>
+
+      <h2 class="header__msj"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav class="header__navbar">
+      <ul class="navbar__menu">
+        <li class="navbar__item">Ofertas</li>
+        <li class="navbar__item">Tiendas Oficiales</li>
+        <li class="navbar__item">Vender</li>
+        <li class="navbar__item">Ayuda</li>
+      </ul>
+    </nav>
+
+    <!-- Barra de Usuario -->
+    <nav class="header__login-bar">
+      <ul class="login-bar__menu">
+        <li class="login-bar__item">Creá tu cuenta <i class="fa-regular fa-id-card"></i> </li>
+        <li class="login-bar__item">Ingresá <i class="fa-solid fa-right-to-bracket"></i></li>
+        <li class="login-bar__item">Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
+      </ul>
+    </nav>
+
+    <!-- Boton del Menu Hamburguesa -->
+    <div class="header__burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </header>
+
+  <div class="banner">
+    <img class="banner__img" src="images/img-home-banner.jpg" alt="banner publicitario">
+  </div>
+  <!-- ---- -->
+  <!-- MAIN -->
+  <!-- ---- -->
+  <main class="main">
+    <!-- Sección: Basado en tu última visita -->
+    <section class="product-section product-section--ultima-visita">
+      <h2 class="product-section__title">Basado en tu última visita</h2>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" />
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$6.770</p>
+            <p class="product-card__discount">40% OFF</p>
+          </div>
+          <h3 class="product-card__name">Cafetera Moulinex</h3>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" />
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$230.000</p>
+            <p class="product-card__discount">20% OFF</p>
+          </div>
+          <h3 class="product-card__name">MacBook Pro 2019</h3>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" />
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$70.500</p>
+            <p class="product-card__discount">10% OFF</p>
+          </div>
+          <h3 class="product-card__name">Samsung Galaxy S10</h3>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-tv-samsung-smart.jpg" alt="Smart TV Samsung 43&quot;" />
+        <!-- &quot en atributos HTML cuando pone comillas dentro de comillas-->
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$23.200</p>
+            <p class="product-card__discount">5% OFF</p>
+          </div>
+          <h3 class="product-card__name">Smart TV Samsung 43"</h3>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sección: Ofertas -->
+    <section class="product-section product-section--ofertas">
+      <h2 class="product-section__title">Ofertas</h2>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" />
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$6.770</p>
+            <p class="product-card__discount">40% OFF</p>
+          </div>
+          <h3 class="product-card__name">Cafetera Moulinex</h3>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" />
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$230.000</p>
+            <p class="product-card__discount">20% OFF</p>
+          </div>
+          <h3 class="product-card__name">MacBook Pro 2019</h3>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" />
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$70.500</p>
+            <p class="product-card__discount">10% OFF</p>
+          </div>
+          <h3 class="product-card__name">Samsung Galaxy S10</h3>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__image" src="/images/img-tv-samsung-smart.jpg" alt="Smart TV Samsung 43&quot;" />
+        <!-- &quot en atributos HTML cuando pone comillas dentro de comillas-->
+        <div class="product-card__detaills">
+          <div class="product-card__icon-circle">
+            <i class="product-card__icon fa-solid fa-truck"></i>
+          </div>
+          <div class="product-card__price-box">
+            <p class="product-card__price">$23.200</p>
+            <p class="product-card__discount">5% OFF</p>
+          </div>
+          <h3 class="product-card__name">Smart TV Samsung 43"</h3>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <!-- ------ -->
+  <!-- FOOTER -->
+  <!-- ------ -->
+
+  <footer class="footer">
+
+    <div class="footer__features">
+      <section class="footer-feature">
+        <i class="footer-feature__icon fa-solid fa-credit-card"></i>
+        <h4 class="footer-feature__title">Pagá con tarjeta o en efectivo</h4>
+        <p class="footer-feature__text">
+          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+          seguro!
+        </p>
+      </section>
+
+      <section class="footer-feature">
+        <i class="footer-feature__icon fa-solid fa-gift"></i>
+        <h4 class="footer-feature__title">Envío gratis desde $2.500</h4>
+        <p class="footer-feature__text">
+          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+          Mercado Puntos.
+        </p>
+      </section>
+
+      <section class="footer-feature">
+        <i class="footer-feature__icon fa-solid fa-user-shield"></i>
+        <h4 class="footer-feature__title">Seguridad de principio a fin</h4>
+        <p class="footer-feature__text">
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+        </p>
+      </section>
+
+
+      <section class="footer-feature footer-feature--soluciones">
+        <i class="footer-feature__icon fa-solid fa-book"></i>
+        <h4 class="footer-feature__title">Notas de Soluciones</h4>
+        <p class="footer-feature__text footer-feature__text--solution">Solución Integrador - Módulo 4 - Clase 17 -
+          07/05/2025 || Maqueta HTML</p>
+        <p class="footer-feature__text footer-feature__text--solution">Solución Integrador - Módulo 4 - Clase 18 -
+          08/05/2025 || Practica CSS y
+          Metodología BEN </p>
+        <p class="footer-feature__text footer-feature__text--solution">Solución Integrador - Módulo 4 - Clase 19 -
+          12/05/2025 || Diseño Responsivo</p>
+        <p class="footer-feature__text footer-feature__text--solution">Solución Integrador - Módulo 4 - Clase 20 -
+          13/05/2025 || Flex Box</p>
+        <p class="footer-feature__text footer-feature__text--solution">Solución Integrador - Módulo 4 - Clase 20 -
+          14/05/2025 || Extra - Variables CSS</p>
+      </section>
+    </div>
+
+    <p class="footer__copyright">
+      Copyright © 2025 Dante Delprato.
+    </p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/30f2e17de6.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

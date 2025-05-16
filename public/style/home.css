@@ -1,0 +1,511 @@
+/*
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+● Íconos
+El departamento de diseño usó los íconos de este sitio:
+https://fontawesome.com/icons?d=gallery&m=free
+
+> header
+magnifying glass <i class="fa-solid fa-magnifying-glass"></i>
+hand holding dollar <i class="fa-solid fa-hand-holding-dollar"></i>
+id card <i class="fa-regular fa-id-card"></i>
+enter <i class="fa-solid fa-right-to-bracket"></i>
+basked shopping <i class="fa-solid fa-basket-shopping"></i>
+button'sbars <i class="fa-solid fa-bars"></i>
+
+>main
+<i class="product-card__icon fa-solid fa-truck">
+
+>footer
+credit card <i class="fa-solid fa-credit-card"></i>
+gift <i class="footer-feature__icon fa-solid fa-gift"></i>
+user sheld <i class="fa-solid fa-user-shield"></i>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+*/
+
+/* ----------------- */
+/* - Desing Tokens - */
+/* ----------------- */
+
+:root {
+  /* Paleta de Colores */
+  --color-yellow: #EAC926;
+  --color-blue: #03264C;
+  --color-lightblue: #1259c3;
+  --color-grey: #666;
+  --color-lightgrey: #ebebeb;
+  --color-green: #39b54a;
+
+  /* Tipografía */
+  --fs-xs: 0.75rem;
+  /*12px*/
+  --fs-sm: 0.875rem;
+  /*14px*/
+  --fs-base: 1rem;
+  /*16px*/
+  --fs-lg: 1.25rem;
+  /*20px*/
+  --fs-xl: 2rem;
+  /*32px*/
+  --fs-xxl: 3rem;
+  /*48px*/
+
+  --fs-txt: 0.75rem;
+  /*12px*/
+  --fs-description: 1rem;
+  /*16px*/
+  --fs-price: 1.125rem;
+  /*18px*/
+  --fs-title: 1.5rem;
+  /*24px*/
+
+  /* Espaciados */
+  --spacing-sm: 0.5rem;
+  /* 8px*/
+  --spacing-md: 1rem;
+  /*16px*/
+  --spacing-lg: 1.5rem;
+  /*24px*/
+  --spacing-xl: 2rem;
+  /*32px*/
+
+  /* Radios de borders */
+  --border-radius: 0.5rem;
+  /*8px*/
+
+}
+
+/* ------------- */
+/* - Generales - */
+/* ------------- */
+
+.body {
+  font-family: Roboto;
+  background-color: var(--color-lightgrey);
+}
+
+/* ---------- */
+/* - HEADER - */
+/* ---------- */
+
+.header {
+  background-color: var(--color-yellow);
+  padding: var(--spacing-sm);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* h1 por SEO - Oculto*/
+.header__title--oculto {
+  display: none;
+}
+
+.header__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 50%;
+  padding: var(--spacing-sm);
+}
+
+.header__search-bar {
+  width: 50%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding: var(--spacing-sm);
+}
+
+.search-bar__form {
+  width: 100%;
+
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  /* o wrap si querés que el botón baje debajo del input en pantallas muy chicas */
+
+  background-color: white;
+
+  border: none;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+
+.search-bar__input {
+  flex-grow: 1;
+  min-width: 0;
+  /*👈evitaquecrezcaindefinidamente*/
+  width: 100%;
+  /*👈fuerzaausarsoloelespaciodisponible*/
+  box-sizing: border-box;
+
+
+
+  line-height: var(--spacing-xl);
+
+  border: none;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.search-bar__button {
+  color: var(--color-grey);
+
+  padding: 0 var(--spacing-sm);
+  background-color: white;
+
+  border: none;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+
+.header__msj {
+  width: 100%;
+
+  font-size: var(--fs-description);
+  text-align: center;
+
+  padding: var(--spacing-sm) 0;
+}
+
+.navbar__menu {
+  list-style: none;
+  padding-left: 0;
+  display: none;
+
+}
+
+.login-bar__menu {
+  list-style: none;
+  padding-left: 0;
+  display: none;
+}
+
+.header__burger-menu {
+  justify-self: center;
+  color: white;
+  background-color: var(--color-lightblue);
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+/* -------- */
+/* - MAIN - */
+/* -------- */
+
+.banner__img {
+  width: 100vw;
+}
+
+.main {
+  width: 90vw;
+  justify-self: center;
+}
+
+.product-section__title {
+  width: 100%;
+
+  color: var(--color-grey);
+  font-size: var(--fs-title);
+
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
+}
+
+.product-section {
+  font-size: var(--fs-title);
+}
+
+.product-card {
+  background-color: white;
+  margin: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+}
+
+
+.product-card__icon-circle {
+  width: var(--spacing-xl);
+  height: var(--spacing-xl);
+  background-color: white;
+  border: 1px solid var(--color-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 99;
+
+  justify-self: end;
+  margin-top: -30px;
+
+}
+
+.product-card__icon {
+  font-size: var(--fs-base);
+  color: var(--color-green);
+}
+
+
+
+.product-card__image {
+  width: 80%;
+  justify-self: center;
+}
+
+.product-card__detaills {
+  border-top: 1px solid var(--color-lightgrey);
+  padding: var(--spacing-md);
+  display: none;
+}
+
+.product-card__price-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.product-card__price {
+  font-size: var(--fs-price);
+  flex-grow: 1;
+
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.product-card__discount {
+  font-size: var(--fs-base);
+  color: var(--color-green);
+
+  flex-grow: 1;
+
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.product-card__name {
+  font-size: var(--fs-base);
+}
+
+/* ---------- */
+/* - FOOTER - */
+/* ---------- */
+
+.footer {
+  background-color: var(--color-lightgrey);
+}
+
+.footer__features {
+  padding: var(--spacing-lg) 0;
+}
+
+.footer-feature {
+  text-align: center;
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
+}
+
+.footer-feature__title {
+  font-size: var(--fs-base);
+  color: var(--color-grey);
+  margin: var(--spacing-sm);
+}
+
+.footer-feature__icon {
+  font-size: var(--fs-xl);
+  color: var(--color-blue);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-feature__text {
+  font-size: var(--fs-txt);
+}
+
+.footer-feature--soluciones {
+  margin-top: var(--spacing-xl);
+}
+
+.footer-feature__text--solution {
+  margin: var(--spacing-sm) 0;
+}
+
+.footer__copyright {
+  font-size: var(--fs-txt);
+  text-align: center;
+}
+
+
+/* ------------------ */
+/* -@ Media Queries - */
+/* ------------------ */
+
+/* tablet */
+@media (min-width:480px) {
+
+  /* ----------- */
+  /* -@ HEADER - */
+  /* ----------- */
+
+  .header {
+    align-items: center;
+  }
+
+  .header__main {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .header__logo {
+    width: 30%;
+    padding: var(--spacing-md);
+  }
+
+  .header__search-bar {
+    flex-grow: 1;
+    padding: var(--spacing-md);
+  }
+
+
+  .header__msj {
+    width: 30%;
+
+    font-size: 2vw;
+    font-size: clamp(var(--fs-txt),2vw,var(--fs-base) );
+
+    align-self: center;
+    padding: var(--spacing-md);
+  }
+
+
+  /* Barra de navegación */
+  .header__navbar {
+    width: 50%;
+    padding-left: var(--spacing-sm);
+  }
+
+  .navbar__menu {
+    display: flex;
+  }
+
+  .navbar__item {
+    font-size: clamp(var(--fs-txt),1.66vw,var(--fs-base) );
+    margin-right: var(--spacing-lg);
+    margin: var(--spacing-sm);
+  }
+
+  /* Barra de Usuario */
+  .header__login-bar {
+    width: 50%;
+    padding-right: var(--spacing-sm);
+  }
+
+
+  .login-bar__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login-bar__item {
+    font-size: clamp(var(--fs-txt),1.66vw,var(--fs-base) );
+    margin-left: var(--spacing-lg);
+    margin: var(--spacing-sm);
+  }
+
+
+  /* Boton del Menu Hamburguesa */
+  .header__burger-menu {
+    display: none;
+  }
+
+  /* -------- */
+  /* - MAIN - */
+  /* -------- */
+
+  .product-section {
+    font-size: var(--fs-title);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product-card {
+    width: 40vw;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .product-card__detaills {
+    display: block;
+  }
+
+  /* ---------- */
+  /* - FOOTER - */
+  /* ---------- */
+
+
+  .footer-feature__icon {
+    font-size: clamp(var(--fs-xl), 3.5vw, var(--fs-xxl));
+  }
+
+
+  .footer-feature__title {
+    font-size: clamp(var(--fs-base), 3vw, var(--fs-title));
+  }
+
+  .footer-feature__text {
+    font-size: clamp(var(--fs-txt), 2vw, var(--fs-base));
+  }
+
+  .footer__copyright {
+    font-size: clamp(var(--fs-sm), 2vw, var(--fs-txt));
+  }
+
+}
+
+/*desktop*/
+@media (min-width:1025px) {
+  .product-card {
+    width: 20vw;
+  }
+}
