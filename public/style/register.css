@@ -1,0 +1,129 @@
+/* ---------------- */
+/* -     Main     - */
+/* ---------------- */
+
+.main-register {
+  padding: var(--spacing-md) var(--spacing-sm);
+  background-color: var(--color-lightgrey);
+}
+
+.main-register__section-form {
+  width: 90%;
+
+  /*orden del contenido*/
+  justify-self: center;
+  padding: var(--spacing-sm);
+  background-color: white;
+
+  /*Efectos del borde*/
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.section-form__tittle {
+  font-size: var(--fs-title);
+  color: var(--color-grey);
+  text-align: center;
+  padding: var(--spacing-sm);
+}
+
+.main__form {
+  padding: var(--spacing-sm);
+}
+
+.form-div {
+  margin: var(--spacing-sm) 0;
+}
+
+.form-div--perfil-cuenta {
+  width: 100%;
+  margin: var(--spacing-md) 0;
+}
+
+.form__label {
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+
+}
+
+.form__input {
+  text-align: center;
+  flex-grow: 1;
+  min-width: 0;
+  /*👈evita que crezca indefinidamente*/
+  width: 100%;
+  /*👈fuerza a usar solo el espacio disponible*/
+
+  line-height: var(--spacing-xl);
+
+  border-color: var(--color-lightgrey);
+
+  background-color: var(--color-lightgrey);
+
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--spacing-sm);
+}
+
+.check-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--spacing-sm);
+}
+
+.form__user-photo{
+  width: 25%;
+  justify-self: center;
+
+  margin: var(--spacing-sm) 0;
+
+  border: 5px solid var(--color-grey);
+
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.form-div--buttons{
+  margin-top: var(--spacing-md);
+}
+
+.form-button{
+  width: 100%;
+  padding: var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+
+  font-weight: bold;
+
+  box-shadow: var(--box-shadow);
+
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.form-button-submit{
+  margin-bottom: 0;
+  background-color: var(--color-yellow);
+}
