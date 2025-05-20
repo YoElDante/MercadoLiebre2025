@@ -2,7 +2,7 @@
 /* -     Main     - */
 /* ---------------- */
 
-.main-register {
+.main-form {
   padding: var(--spacing-md) var(--spacing-sm);
   background-color: var(--color-lightgrey);
 }

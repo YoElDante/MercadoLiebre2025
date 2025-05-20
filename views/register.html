@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="/style/home.css">
   <link rel="stylesheet" href="/style/register.css">
 
-
   <!--De Terceros-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 
@@ -29,7 +28,7 @@
   <title>Mercado Liebre - Register form</title>
 </head>
 
-<body>
+<body class="body">
   <!-- ------ -->
   <!-- HEADER -->
   <!-- ------ -->
@@ -39,8 +38,9 @@
     <h1 class="header__title header__title--oculto">Mercado Liebre - Register form</h1>
 
     <div class="header__main">
-      <img class="header__logo" src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" />
-
+      <a class="header__logo" href="/">
+        <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" />
+      </a>
       <!-- Barra de busqueda -->
       <nav class="header__search-bar">
         <form class="search-bar__form" action="/buscar" method="get">
@@ -70,8 +70,12 @@
         <li class="login-bar__item">
           <a href="/register"> Creá tu cuenta <i class="fa-regular fa-id-card"></i> </a>
         </li>
-        <li class="login-bar__item">Ingresá <i class="fa-solid fa-right-to-bracket"></i></li>
-        <li class="login-bar__item">Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
+        <li class="login-bar__item">
+          <a href="/login"> Ingresá <i class="fa-solid fa-right-to-bracket"></i> </a>
+        </li> 
+        <li class="login-bar__item">
+          Mis compras <i class="fa-solid fa-basket-shopping"></i>
+        </li>
       </ul>
     </nav>
 
@@ -84,7 +88,7 @@
   <!-- ---- -->
   <!-- MAIN -->
   <!-- ---- -->
-  <main class="main-register">
+  <main class="main-form">
 
     <section class="main-register__section-form">
 
