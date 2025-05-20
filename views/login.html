@@ -75,7 +75,7 @@
         </li>
         <li class="login-bar__item">
           <a href="/login"> Ingresá <i class="fa-solid fa-right-to-bracket"></i> </a>
-        </li> 
+        </li>
         <li class="login-bar__item">
           Mis compras <i class="fa-solid fa-basket-shopping"></i>
         </li>
@@ -98,8 +98,23 @@
       <h2 class="section-form__tittle">Formulario de Login</h2>
 
       <form class="main__form" action="/login" method="post">
+        <div class="form-div">
+          <label class="form__label" for="user-name">Nombre de usuari@</label>
+          <input class="form__input" type="text" name="username" id="username" required autofocus>
+        </div>
 
-    </form>
+        <div class="form-div">
+          <!-- ■ Contraseña -->
+          <label class="form__label" for="password">Contraseña</label>
+          <input class="form__input" type="password" name="password" id="password" required>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="form-div form-div--buttons">
+          <button class="form-button form-button-submit" type="submit">Confirmar Formularios</button>
+        </div>
+
+      </form>
     </section>
 
   </main>
