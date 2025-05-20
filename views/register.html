@@ -72,7 +72,7 @@
         </li>
         <li class="login-bar__item">
           <a href="/login"> Ingresá <i class="fa-solid fa-right-to-bracket"></i> </a>
-        </li> 
+        </li>
         <li class="login-bar__item">
           Mis compras <i class="fa-solid fa-basket-shopping"></i>
         </li>
@@ -95,23 +95,27 @@
       <h2 class="section-form__tittle">Formulario de Registro</h2>
 
       <form class="main__form" action="/register" method="post">
-        
+
         <!-- ■ Nombre de usuari@ -->
         <div class="form-div">
           <label class="form__label" for="user-name">Nombre de usuari@</label>
-          <input class="form__input" type="text" name="username" id="username" required autofocus>
+          <input class="form__input" type="text" name="username" id="username"
+            placeholder="min 3 caracteres - sin espacios" minlength="3" maxlength="10" required autofocus
+            pattern="^\S{3,}$">
         </div>
 
-          <!-- ■ Email -->
+        <!-- ■ Email -->
         <div class="form-div">
           <label for="email">Email</label>
-          <input class="form__input" type="text" name="email" id="email" required>
+          <input class="form__input" type="text" name="email" id="email"
+            placeholder="solo un @ y debe terminar con .com" pattern="^[^@]{3,}@[a-zA-Z0-9.-]{3,}\.com$" required>
         </div>
 
         <!-- ■ Nombre y apellido -->
         <div class="form-div">
           <label class="form__label" for="fullname">Nombre y Apellido</label>
-          <input class="form__input" type="text" name="fullname" id="fullname" required>
+          <input class="form__input" type="text" name="fullname" id="fullname" pattern="^[A-Za-zÑñÁÉÍÓÚáéíóú\s]+$"
+            minlength="7" maxlength="50" placeholder="solo se admiten letras y números" required>
         </div>
 
         <!-- ■ Fecha de nacimiento -->
@@ -124,7 +128,8 @@
         <!-- ■ Domicilio -->
         <div class="form-div">
           <label class="form__label" for="adress">Domicilio</label>
-          <input class="form__input" type="text" name="adress" id="adress" required>
+          <input class="form__input" type="text" name="adress" id="adress"
+            placeholder="nombre de calle y altura numerica" required>
         </div>
 
         <!-- RADIO - ROL DEL USUARIO -->
@@ -187,8 +192,8 @@
           <!-- ■ Foto de usuario -->
           <label class="form__label" for="img-file">Foto de usuario</label>
           <img class="form__user-photo" id="user-photo" src="/images/img-userProfile-default.webp"
-            alt="foto de usuario">
-          <input class="form__input" type="file" name="img-file" id="img-file">
+            tittle="imagen de perfil del uruario" alt="foto de usuario">
+          <input class="form__input" type="file" name="img-file" id="img-file" accept=".jpg,.jpeg,.png,.gif,.bmp,.webp,.svg,image/jpeg,image/png,image/gif,image/bmp,image/webp,image/svg+xml" >
         </div>
 
 
@@ -196,19 +201,21 @@
         <div class="form-div">
           <!-- ■ Contraseña -->
           <label class="form__label" for="password">Contraseña</label>
-          <input class="form__input" type="password" name="password" id="password">
+          <input class="form__input" type="password" name="password" id="password" placeholder="Debe contener al menos una mayuscula, minuscula, numero y simbolo" required>
         </div>
         <div class="form-div">
           <!-- ■ Confirmar Contraseña -->
           <label class="form__label" for="confirm-password">Confirmar Contraseña</label>
-          <input class="form__input" type="password" name="confirm-password" id="confirm-password">
+          <input class="form__input" type="password" name="confirm-password" id="confirm-password" placeholder="debe coincidir con el password suministrado">
         </div>
 
 
         <!-- BOTONES -->
         <div class="form-div form-div--buttons">
           <button class="form-button form-button-reset" type="reset">Reiniciar Datos</button>
-          <button class="form-button form-button-submit" type="submit">Confirmar Formulario</button>
+          <button class="form-button form-button-submit" type="submit">Confirmar Formulario
+
+          </button>
         </div>
 
       </form>

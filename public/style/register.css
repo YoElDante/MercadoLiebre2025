@@ -9,6 +9,7 @@
 
 .main-register__section-form {
   width: 90%;
+  max-width: 800px;
 
   /*orden del contenido*/
   justify-self: center;
@@ -125,5 +126,6 @@
 
 .form-button-submit{
   margin-bottom: 0;
-  background-color: var(--color-yellow);
+  color: white;
+  background-color: var(--color-lightblue);
 }
