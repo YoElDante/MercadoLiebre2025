@@ -10,7 +10,7 @@ versión 2025.
 
 ## 🌐 Demo en Vivo
 
-🔗 [mercado-liebre-2025-436326ddd938.herokuapp.com](https://mercado-liebre-2025-436326ddd938.herokuapp.com/)
+🔗 [https://mercadoliebre2025.onrender.com/](https://mercadoliebre2025.onrender.com/)
 
 ---
 
@@ -36,7 +36,7 @@ versión 2025.
 
 ---
 
-## 🗂️ Repositorio Original (2022)
+## 🗂️ Repositorio Antiguo (2022)
 
 📦 [dh-mercadoliebre-delprato.onrender.com](https://dh-mercadoliebre-delprato.onrender.com/)  
 📁 Repositorio anterior: [GitHub: MercadoLiebre (2022)](https://github.com/YoElDante/MercadoLiebre)
